@@ -8,8 +8,8 @@ body, html {
     height: 100%;
     font-family: Arial, sans-serif;
     scroll-behavior: smooth; /* Enables smooth scrolling */
-    background-color: #1B1B1E; /* Sets the page background color */
-    color: white;
+    background-color: #1a1a1d; /* Sets the page background color */
+    color: #f5f5f7;
 }
 
 .container {
@@ -23,7 +23,7 @@ body, html {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, #373F51 50%, #58A4B0 50%);
+    background: linear-gradient(135deg, #32264c 50%, #1a1a1d 50%);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
@@ -34,7 +34,7 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: #f5f5f7;
 }
 
 .content.left {
@@ -52,46 +52,46 @@ body, html {
 h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
-    color: #D8DBE2;
+    color: #f5f5f7;
 }
 
 p {
     font-size: 1.2rem;
     margin-bottom: 1rem;
-    color:#A9BCD0;
+    color:#f5f5f7;
 }
 
 a {
-    color: #A9BCD0;
+    color: #f5f5f7;
     text-decoration: none;
     font-weight: bold;
-    border: 2px solid #A9BCD0;
+    border: 2px solid #f5f5f7;
     padding: 0.5rem 1rem;
     border-radius: 5px;
     transition: all 0.3s ease;
 }
 
 a:hover {
-    background: white;
+    background:#f5f5f7;
     color: black;
 }
 
 #more-info {
     padding: 4rem 2rem;
     background-color: #1B1B1E; /* Background color for this section */
-    color: white;
+    color:#f5f5f7;
     text-align: center;
 }
 
 #more-info h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    color: #D8DBE2;
+    color: #f5f5f7;
 }
 
 #more-info p {
     font-size: 1.2rem;
-    color: #A9BCD0;
+    color: #f5f5f7;
 }
 
 
@@ -101,37 +101,37 @@ a:hover {
 #about {
     padding: 4rem 2rem;
     background-color: #1B1B1E; /* Background color for this section */
-    color: white;
+    color:#f5f5f7;
     text-align: center;
 }
 
 #about h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    color: #D8DBE2;
+    color: #f5f5f7;
 }
 
 #about p {
     font-size: 1.2rem;
-    color: #A9BCD0;
+    color: #f5f5f7;
 }
 
 #contact {
     padding: 4rem 2rem;
     background-color: #1B1B1E; /* Background color for this section */
-    color: white;
+    color:#f5f5f7;
     text-align: center;
 }
 
 #contact h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    color: #D8DBE2;
+    color: #f5f5f7;
 }
 
 #contact p {
     font-size: 1.2rem;
-    color: #A9BCD0;
+    color: #f5f5f7;
 }
 
 /* Navbar Styles */
@@ -140,7 +140,7 @@ a:hover {
     top: 0;
     width: 100%;
     height: 60px;
-    background-color: #1B1B1E; /* Matches the background color */
+    background-color: #150a32; /* Matches the background color */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -151,7 +151,7 @@ a:hover {
 
 .navbar .logo {
     font-size: 1.5rem;
-    color: #D8DBE2;
+    color: #f5f5f7;
     font-weight: bold;
 }
 
@@ -167,16 +167,31 @@ a:hover {
 
 .nav-links a {
     text-decoration: none;
-    color: #A9BCD0;
+    color: #f5f5f7;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: white;
+    color:#444444;
 }
 
-/* Add top padding to prevent content overlap with navbar */
-#home, #about, #more-info, #contact {
-    padding-top: 80px; /* Space to account for the fixed navbar */
+
+
+
+.image-container-nextto {
+    display: flex;
+    justify-content: center; /* Center the images */
+    gap: 20px; /* Space between images */
+}
+
+.image-container-nextto img {
+    max-width: 45%; /* Adjust width so they fit side by side */
+    height: auto; /* Keep aspect ratio */
+    max-height: 500px;
+}
+
+.rounded-corners {
+    border-radius: 15px; /* Adjust the value for more or less roundness */
+    width: 600px; /* Adjust width to make the image smaller */
 }
